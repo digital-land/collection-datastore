@@ -1,35 +1,8 @@
-# XXX collection
+# Collection Datastore
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/digital-land/XXX/blob/main/LICENSE)
-[![Run pipeline](https://github.com/digital-land/XXX-collection/actions/workflows/run.yml/badge.svg)](https://github.com/digital-land/XXX-collection/actions/workflows/run.yml)
 
-The data and pipeline to build the [XXX dataset](https://www.digital-land.info/dataset/XXX).
-
-# Collection
-
-* [collection/source.csv](collection/source.csv) — the list of data sources by organisation, see [specification/source](https://digital-land.github.io/specification/schema/source/)
-* [collection/endpoint.csv](collection/endpoint.csv) — the list of endpoint URLs for the collection, see [specification/endpoint](https://digital-land.github.io/specification/schema/endpoint)
-* [collection/resource/](collection/resource/) — collected resources
-
-*These files are now stored in AWS S3:*
-
-* [collection/log/](https://files.planning.data.gov.uk/XXX/collection/log/) — individual log JSON files, created by the collection process
-* [collection/log.csv](https://files.planning.data.gov.uk/XXX/collection/log.csv) — a collection log assembled from the individual log files, see [specification/log](https://digital-land.github.io/specification/schema/log)
-* [collection/resource.csv](https://files.planning.data.gov.uk/XXX/collection/resource.csv) — a list of collected resources, see [specification/resource](https://digital-land.github.io/specification/schema/resource)
-
-# Updating the collection
-
-We recommend working in [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/) before installing the python [requirements](requirements.txt), [makerules](https://github.com/digital-land/makerules) and other dependencies. Requires Make v4.0 or above.
-
-    $ make makerules
-    $ make init
-    $ make collect
-
-# Building the datasets
-
-The collected files can then be converted into a national dataset:
-
-    $ make
+This repo is used to store data that is used across our pipeline collections that cannot be stored on the authorative source.
 
 # Licence
 
