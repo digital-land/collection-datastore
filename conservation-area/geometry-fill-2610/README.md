@@ -17,8 +17,7 @@ None of the entities is in an LPA that sends its own conservation-area data (che
 
 Sources: 877 polygons were downloaded from public bodies' GIS services (LPAs, counties, national park authorities,
 Historic England, the GLA). 11 West Northamptonshire polygons were traced from the council's PDF boundary maps with
-the Extract set-up (extract-alpha #801): 2 runs each, the runs agree at IoU 0.947 to 0.999, and a person checked the
-overlays against the council maps.
+the Extract set-up (extract-alpha #801): 2 runs each, the runs agree at IoU 0.947 to 0.999.
 
 These files hold only the geometry, so they change no other field. The existing MHCLG files were not changed,
 because a changed file gives every fact in it a new entry-date, and older MHCLG values would then replace newer
